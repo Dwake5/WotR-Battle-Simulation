@@ -1,8 +1,8 @@
-## WotR Battle Simulator
+# WotR Battle Simulator
 
 This is app simulates a large amount of battles for the boardgame War of the Ring and displays the results and chance of them occuring.
 
-According to popular website Board Game Geek (BGG), it the second most complex board game there is (although number 1 is a bit of a joke and takes 40000 minutes to complete). It has an intricate combat system with about 220 minatures and many types and classifications of units, and different types of terrain. 
+According to popular website Board Game Geek (BGG), it the second most complex board game there is (although number 1 is a bit of a joke and takes 40,000 minutes to complete). It has an intricate combat system with about 220 minatures and many types and classifications of units, and different types of terrain. 
 
 As testimount to its complexity the game has a 50 A4 page rulebook, games take 3 hours, although the first one will commonly take 5-10 hours. It takes about 5 games before you have a basic understanding of the game. And despite being out for nearly 10 years, niche questions still pop up, with the proffesionals normally not having an answer due to all the intricies involved. 
 
@@ -54,45 +54,46 @@ Due to this downgrading mechanic, when you are deciding which units are being do
 ## An Example Battle
 
 Equal sides of 3 regulars, 1 elites, and 2 leaders will fight on a fortfication, I will use a function to roll dice:
-Round 1
+
+### Round 1
 Attacker [3,1,2] (hitting on 6)
-Rolls: 4,4,5,5 (no hits)
-There are 4 missed dice, 2 leaders encourage 2 to reroll. 
-Rolls 5,6 (1 hit)
+- Rolls: 4,4,5,5 (no hits)
+- There are 4 missed dice, 2 leaders encourage 2 to reroll. 
+- Rolls 5,6 (1 hit)
 
 Defender [3,1,2] (hitting on 5)
-Rolls: 2,3,3,4 (no hits)
-There are 4 missed dice, 2 leaders encourage 2 to reroll. 
-Rolls: 1,5 (1 hit)
+- Rolls: 2,3,3,4 (no hits)
+- There are 4 missed dice, 2 leaders encourage 2 to reroll. 
+- Rolls: 1,5 (1 hit)
 
 Both sides take 1 damage, in order to preserve 4 dice being rolled both downgrade the elite.
 
-Round 2
+### Round 2
 Attacker [4,0,2] (hitting on 5)
-Rolls: 2,3,5,5 (2 hits)
-There are 2 missed dice, 2 leaders encourage 2 to reroll. 
-Rolls: 1,5 (1 hit)
+- Rolls: 2,3,5,5 (2 hits)
+- There are 2 missed dice, 2 leaders encourage 2 to reroll. 
+- Rolls: 1,5 (1 hit)
 3 total hits
 
 Defender [4,0,2] (hitting on 5)
-Rolls: 2,3,4,5 (1 hit)
-There are 3 missed dice, 2 leaders encourage 2 to reroll. 
-Rolls: 2,4 (0 hits)
+- Rolls: 2,3,4,5 (1 hit)
+- There are 3 missed dice, 2 leaders encourage 2 to reroll. 
+- Rolls: 2,4 (0 hits)
 1 total hit
 
 Both sides now have no choice but to reduce regulars
 
-Round 3
+### Round 3
 Attacker [3,0,2] (hitting on 5)
-Rolls: 2,3,5 (1 hit)
-There are 2 missed dice, 2 leaders encourage 2 to reroll. 
-Rolls: 2,6 (1 hits)
+- Rolls: 2,3,5 (1 hit)
+- There are 2 missed dice, 2 leaders encourage 2 to reroll. 
+- Rolls: 2,6 (1 hits)
 2 total hits (although they already won after the first)
 
 Defender [1,0,2] (hitting on 5)
-Rolls: 4 (no hit)
-There are 1 missed dice, 2 leaders encourage 1 to reroll. ( a missed dice can only be rerolled once, excess leaders do nothing)
-Rolls: 4 (no hits)
+- Rolls: 4 (no hit)
+- There are 1 missed dice, 2 leaders encourage 1 to reroll. ( a missed dice can only be rerolled once, excess leaders do nothing)
+- Rolls: 4 (no hits)
 0 total hits.
 
 The battle is now over, the attacker ends with [3,0,2] units and capturers the Fort, the defender has lost all his units including leaders.
